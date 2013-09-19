@@ -1,5 +1,5 @@
 
-public class Clase {
+public class FizzBuzz {
 	
 	public boolean multiplo3(int num){
 		if(num%3 == 0)

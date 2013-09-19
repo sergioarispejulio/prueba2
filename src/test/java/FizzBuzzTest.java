@@ -3,12 +3,12 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class pruebasFizzBuzz {
+public class FizzBuzzTest {
 
-	Clase prueba;
+FizzBuzz prueba;
 	
-	public pruebasFizzBuzz(){
-		prueba = new Clase();
+	public FizzBuzzTest(){
+		prueba = new FizzBuzz();
 	}
 	
 	@Test
@@ -20,7 +20,7 @@ public class pruebasFizzBuzz {
 	public void truemultiplo5() {
 		assertTrue(prueba.multiplo5(5));
 	}
-	
+
 	@Test
 	public void falsemultiplo3() {
 		assertFalse(prueba.multiplo3(2));
@@ -40,7 +40,7 @@ public class pruebasFizzBuzz {
 	public void devolverbuzz(){
 		assertEquals("Buzz", prueba.resultado(5));
 	}
-	
+
 	@Test
 	public void devolverfizzbuzz(){
 		assertEquals("FizzBuzz", prueba.resultado(15));
@@ -50,6 +50,6 @@ public class pruebasFizzBuzz {
 	public void devolvernormal(){
 		assertEquals(7, 7);
 	}
-	
+
 
 }
