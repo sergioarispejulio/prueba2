@@ -5,12 +5,9 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
-FizzBuzz prueba;
+	FizzBuzz prueba = new FizzBuzz();
 	
-	public FizzBuzzTest(){
-		prueba = new FizzBuzz();
-	}
-	
+
 	@Test
 	public void truemultiplo3() {
 		assertTrue(prueba.multiplo3(3));
@@ -48,8 +45,24 @@ FizzBuzz prueba;
 	
 	@Test
 	public void devolvernormal(){
-		assertEquals(7, 7);
+		assertEquals("7", prueba.resultado(7));
 	}
 
+	@Test
+	public void imprimeUnaSecuencia(){
+		String esperado = "1\n"+
+						  "2\n"+
+						  "Fizz\n"+
+						  "4\n"+
+						  "Buzz\n"+
+						  "Fizz\n";
+		String obtenido = new String();
+		for(int i = 1; i <= 6; i++)
+		{
+			obtenido = obtenido + prueba.resultado(i) + "\n";
+		}
+		assertEquals(esperado, obtenido);
+	}
+	
 
 }

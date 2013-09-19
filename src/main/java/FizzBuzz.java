@@ -29,7 +29,7 @@ public class FizzBuzz {
 			return "FizzBuzz";
 		}
 		else
-		{
+		{ 
 			if(multiplo3(num) == true)
 			{
 				return "Fizz";
