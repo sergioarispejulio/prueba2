@@ -1,0 +1,10 @@
+<web-app>
+	<servlet>
+		<servlet-name>FizzBuzzServl</servlet-name>
+		<servlet-class>fizzbuzz.FizzBuzzServl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FizzBuzzServl</servlet-name>
+		<url-pattern>/FizzBuzzServl</url-pattern>
+	</servlet-mapping>
+</web-app>
