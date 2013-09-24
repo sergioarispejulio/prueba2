@@ -14,7 +14,20 @@ public class FizzBuzzServl extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		String hasta = request.getParameter("hasta");
 		FizzBuzz objeto = new FizzBuzz();
-		response.getWriter().println("Resultado: " + objeto.resultado(Integer.parseInt(hasta)));
+		int cant = Integer.parseInt(hasta);
+		hasta="";
+		for(int i = 0; i <= cant; i++)
+		{
+			if(i == 1)
+			{
+				hasta = objeto.resultado(i)+"\n";
+			}
+			else
+			{
+				hasta = hasta+objeto.resultado(i)+"\n";
+			}
+		}
+		response.getWriter().println("Resultado: " + hasta);
 	}
 	
 	
